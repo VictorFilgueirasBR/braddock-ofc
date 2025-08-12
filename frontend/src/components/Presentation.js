@@ -82,8 +82,7 @@ export default function Presentation() {
               <div className="quote">“</div>
               <div className="caption-text">
                 Se preocupe com oque realmente importa — 
-                Capacidade estratégica e técnica da Bradock Intelligence para clientes
-                corporativos.
+                Capacidade estratégica e técnica para clientes corporativos.
               </div>
             </div>
           </div>
