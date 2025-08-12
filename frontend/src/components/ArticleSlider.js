@@ -40,7 +40,7 @@ export default function ArticleSlider() {
   const prevSlide = () =>
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
-  const { title, resumo, date, link } = slides[currentIndex];
+  const { title, resumo, date} = slides[currentIndex];
 
   return (
     <section className="article-slider">
