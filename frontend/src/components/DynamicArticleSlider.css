@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+.das-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1.2s ease forwards;
+  padding-bottom: 5rem;
+}
+
+/* ===== HEADER ===== */
+.das-header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.das-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 6s ease-in-out;
+}
+
+.das-header:hover .das-image {
+  transform: scale(1.15);
+}
+
+.das-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5));
+}
+
+.das-title {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  text-align: left;
+  font-size: clamp(1.3rem, 2vw, 2.2rem);
+  font-family: 'Black Ops One', sans-serif;
+  color: #fff;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  white-space: normal;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 90%;
+  margin-bottom: 1.5rem;
+  line-height: 2.6rem;
+}
+
+.das-date {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/* ===== BODY ===== */
+.das-body {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  text-align: justify;
+  max-width: 1000px;
+  width: 90%;
+  margin-top: -2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  animation: uncrumpleDoc 1.5s ease forwards;
+  border: 2px solid rgba(77, 77, 77, 0.192);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔑 Animação "papel desamassando" */
+@keyframes uncrumpleDoc {
+  0% { 
+    opacity: 0; 
+    transform: scale(0.9) rotateX(15deg) skew(6deg); 
+    filter: blur(5px) contrast(0.7); 
+  }
+  50% {
+    opacity: 0.7; 
+    transform: scale(1.02) rotateX(5deg) skew(2deg); 
+    filter: blur(2px) contrast(0.9);
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1) rotateX(0) skew(0); 
+    filter: blur(0) contrast(1); 
+  }
+}
+
+.das-resumo {
+  bottom: 2.5rem;
+  left: 2.5rem;
+  text-align: left;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-family: 'Black Ops One', sans-serif;
+  color: #8b0000;
+  text-shadow: 0 4px 8px rgba(94, 94, 94, 0.507);
+  white-space: normal;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 90%;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+/* ===== DIVIDER ===== */
+.das-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(217, 4, 41, 0) 0%, rgb(65, 3, 13) 50%, rgba(217, 4, 41, 0) 100%);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.das-content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.9rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .das-title {
+    font-size: 24px;
+    left: 1.5rem;
+    width: 90%;
+  }
+
+  .das-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .das-title {
+    font-size: 1.3rem;
+  }
+
+  .das-resumo {
+    font-size: 1.1rem;
+  }
+
+
+  .das-body {
+    padding: 1rem;
+  }
+
+  .das-content {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== HOVER ESTILO STENCIL ===== */
+.das-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.das-title:hover::after {
+  transform: translateX(0);
+}

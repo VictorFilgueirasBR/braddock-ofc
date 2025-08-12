@@ -1,0 +1,43 @@
+.contact-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding:  20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+
+
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.contact-icons a:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-icons {
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "greetings": {
+    "oi": "Oi 👋! Sou seu assistente virtual especializado em Segurança Corporativa, Compliance e Inteligência Empresarial. Quer falar sobre serviços, valores, suporte ou treinamentos?",
+    "olá": "Olá 👋! Posso te ajudar a entender nossos serviços de segurança corporativa, compliance, suporte 24/7 ou treinamentos. Qual assunto prefere?",
+    "oiê": "Oiê 👋! Bem-vindo(a). Quer que eu explique nossos serviços, suporte ou que te apresente nossos treinamentos?",
+    "opa": "Opa! 👋 Sou o assistente virtual. Posso falar sobre segurança corporativa, compliance ou suporte técnico. O que te interessa?",
+    "e aí": "E aí 👋! Quer que eu te ajude com informações sobre segurança corporativa, consultoria ou treinamentos?",
+    "oi, tudo bem?": "Oi, tudo ótimo 👋! Posso ajudar com serviços, preços, suporte ou treinamentos?",
+    "bom dia": "Bom dia ☀️! Sou o assistente virtual e posso explicar nossos serviços, valores e suporte 24/7. Qual opção deseja?",
+    "boa tarde": "Boa tarde 🌆! Posso te apresentar nossos serviços de segurança e compliance, quer conhecer?",
+    "boa noite": "Boa noite 🌙! Quer falar sobre segurança corporativa, valores ou suporte?",
+    "como vai": "Olá 👋! Estou aqui para te ajudar com informações sobre compliance, segurança ou treinamentos.",
+    "oi querido": "Oi, querido(a)! 😊 Que bom te ver por aqui. Quer falar sobre nossos serviços ou suporte?",
+    "oi querida": "Oi, querida! 😊 Precisa de ajuda com segurança corporativa ou quer conhecer nossos treinamentos?",
+    "oi sumido": "Oi, sumido(a)! 😊 Voltou no momento certo. Quer que eu explique nossos serviços ou suporte?",
+    "saudações": "Saudações 👋! Sou o assistente virtual especializado em segurança e compliance. Posso explicar nossos serviços?",
+    "cordialmente": "Olá 👋! Posso ajudar a esclarecer detalhes de serviços corporativos, suporte ou treinamentos."
+  },
+
+  "conversationFlow": {
+    "serviços": {
+      "step1": "Nossa consultoria oferece soluções estratégicas em **segurança corporativa, compliance, gestão de riscos e inteligência empresarial**.",
+      "step2": "Podemos detalhar nossos **pacotes de serviços** ou explicar **como funciona a contratação**. Qual opção prefere?",
+      "step3": "Temos diferentes níveis de consultoria, desde auditorias pontuais até gestão completa de segurança corporativa. Quer conhecer **exemplos de projetos reais** que já realizamos?",
+      "cta": "🚀 Você demonstrou interesse em nossos serviços. Nossa IA não segue além deste ponto, mas você ganhou uma **consultoria gratuita via <a href='https://wa.me/5521965486862' target='_blank'>WhatsApp</a>**!"
+    },
+    "suporte": {
+      "step1": "Sim ✅! Oferecemos suporte contínuo **24 horas por dia, 7 dias por semana**.",
+      "step2": "Quer entender como funciona nosso **atendimento emergencial** ou como realizamos **acompanhamentos mensais**?",
+      "step3": "Nosso time é especializado em **respostas rápidas** e **monitoramento preventivo**. Deseja receber um **exemplo de protocolo de atendimento**?",
+      "cta": "💬 Você está interessado em nosso suporte dedicado. Para avançar, fale com nossa equipe pelo **<a href='https://wa.me/5521965486862' target='_blank'>WhatsApp</a>**!"
+    },
+    "contratação": {
+      "step1": "Após um **diagnóstico inicial**, elaboramos um **plano personalizado** para sua empresa, garantindo segurança e eficiência.",
+      "step2": "Posso detalhar o **processo de diagnóstico inicial** ou explicar as **etapas da contratação completa**?",
+      "step3": "Nosso processo é simples: **análise → planejamento → implementação → acompanhamento**. Quer que eu exemplifique com um caso real?",
+      "cta": "📋 Para contratar nossos serviços com segurança, fale diretamente via **<a href='https://wa.me/5521965486862' target='_blank'>WhatsApp</a>**."
+    },
+    "valores": {
+      "step1": "Nossos planos começam a partir de **R$ 2.500/mês**, variando conforme a complexidade e o porte da empresa.",
+      "step2": "Quer conhecer as **faixas de preços** ou prefere entender **o que está incluso nos planos**?",
+      "step3": "Temos planos **básicos, avançados e personalizados**. Quer que eu explique como escolher o ideal para sua empresa?",
+      "cta": "💰 Para um orçamento detalhado, fale com nossa equipe pelo **<a href='https://wa.me/5521965486862' target='_blank'>WhatsApp</a>**."
+    }
+  },
+
+  "knowledgeModules": {
+    "KB_COMPLIANCE_OVERVIEW": "Compliance é o conjunto de práticas que asseguram a conformidade de uma organização com leis e regulamentos. Inclui políticas internas, programas de integridade, due diligence e gestão de riscos.",
+    "KB_LGPD": "A LGPD é a lei brasileira de proteção de dados, obrigando empresas a tratar informações pessoais de forma ética e segura. É um pilar fundamental em qualquer programa de compliance.",
+    "KB_SEGURANCA_CORPORATIVA": "Segurança corporativa moderna engloba **proteção física, segurança digital, análise de riscos, plano de contingência, gestão de crises e proteção executiva**.",
+    "KB_CONSULTORIA_SEGURANCA": "Oferecemos consultorias específicas para **segurança pessoal, patrimonial, auditoria de compliance e investigação empresarial**.",
+    "KB_CAPACITACAO_PROGRAMS": "Treinamentos disponíveis: **Segurança física, Inteligência corporativa, Programas de compliance empresarial e Conduta ética**. Modalidades: presencial, remoto e customizado.",
+    "KB_SUPORTE_FAQ": "Suporte técnico 24/7, abertura de chamados, agendamento de atendimentos e resolução de dúvidas frequentes sobre treinamentos.",
+    "KB_SEGURANCA_PATRIMONIAL": "Realizamos **escolta, proteção de executivos, monitoramento patrimonial, instalação de CFTV e análise de risco físico**.",
+    "KB_INTELIGENCIA_CORPORATIVA": "Coletamos e analisamos dados estratégicos para **antecipar ameaças, prevenir fraudes e apoiar decisões corporativas**."
+  },
+
+  "commonQuestions": {
+    "quais serviços vocês oferecem": "Oferecemos consultoria em segurança corporativa, compliance, gestão de riscos, auditorias e suporte estratégico.",
+    "vocês oferecem suporte 24/7": "Sim ✅! Nossa equipe está disponível **24 horas por dia, 7 dias por semana**.",
+    "como funciona a contratação": "Após um diagnóstico inicial, criamos um plano personalizado e damos início à consultoria com acompanhamento próximo.",
+    "qual o valor médio": "Nossos planos começam a partir de **R$ 2.500/mês**, ajustando-se conforme o tamanho e a necessidade da empresa.",
+    "como entro em contato": "Você pode falar com nossa equipe pelo **<a href='https://wa.me/5521965486862' target='_blank'>WhatsApp</a>** ou pelo e-mail disponível no site.",
+    "o que é compliance": "Compliance garante que a empresa siga leis, regulamentos e práticas éticas para evitar riscos e promover governança.",
+    "lgpd": "A LGPD exige que dados pessoais sejam tratados com segurança e privacidade, sendo parte essencial do compliance.",
+    "segurança corporativa": "Segurança corporativa envolve proteção física, digital, análise de risco e gestão de crises para empresas.",
+    "inteligência corporativa": "Inteligência corporativa coleta e analisa dados para prevenir ameaças e apoiar decisões estratégicas.",
+    "treinamentos": "Oferecemos treinamentos em segurança, compliance, ética e inteligência corporativa, presenciais ou online.",
+    "o que é sistema de segurança corporativa": {
+      "variacoes": [
+        "O que significa um sistema de segurança corporativa?",
+        "Como funciona um sistema de segurança corporativa?",
+        "Qual a definição de sistema de segurança empresarial?",
+        "Oque e sisteme de seguransa corporativa?",
+        "Qual é o sistéma de seguranca empesarial?",
+        "Como funcina um sitema de seguransa?"
+      ],
+      "respostas": [
+        "Um sistema de segurança corporativa é o conjunto de processos, tecnologias e pessoas que protegem uma empresa contra ameaças físicas, digitais e estratégicas.",
+        "Ele envolve controle de acesso, monitoramento, segurança da informação e planos de resposta a crises.",
+        "Empresas estruturam esse sistema para reduzir riscos, garantir integridade dos ativos e proteger colaboradores."
+      ]
+    },
+    "o que são sistemas corporativos": {
+      "variacoes": [
+        "O que são os sistemas corporativos?",
+        "Pode me explicar o que são sistemas corporativos?",
+        "Qual o conceito de sistemas corporativos?",
+        "Oque são sistemos corpurativos?",
+        "O que são os sitemas coorporativos?",
+        "Que são sistemas corpirativos?"
+      ],
+      "respostas": [
+        "Sistemas corporativos são plataformas tecnológicas integradas para gestão e operação de empresas.",
+        "Eles centralizam dados e processos em setores como RH, financeiro, segurança e logística.",
+        "Seu objetivo é otimizar decisões, comunicação e controle interno."
+      ]
+    },
+    "como acessar o ssc": {
+      "variacoes": [
+        "Como faço para acessar o SSC?",
+        "Qual o caminho para entrar no SSC?",
+        "Onde acesso o sistema SSC?",
+        "Como acesar o SSC?",
+        "Como faço pra entra no SSC?",
+        "Ondo aceso o ssc?"
+      ],
+      "respostas": [
+        "O SSC pode ser acessado via login corporativo pela intranet da empresa ou por um portal específico.",
+        "Você deve ter credenciais autorizadas e seguir os protocolos de segurança da organização.",
+        "Caso não tenha acesso, recomendamos entrar em contato com o setor de TI ou segurança da empresa."
+      ]
+    },
+    "quais são os tipos de sistema de segurança": {
+      "variacoes": [
+        "Quais os principais tipos de sistema de segurança?",
+        "Que tipos de sistemas de segurança existem?",
+        "Quais modelos de sistemas de segurança posso usar?",
+        "Quaiz são os tpos de sistema de seguransa?",
+        "Que tipos d sisteme de segurançia existem?",
+        "Que tipos de sistema de seguranca exstem?"
+      ],
+      "respostas": [
+        "Os principais tipos incluem sistemas físicos (CFTV, alarmes), sistemas digitais (firewalls, antivírus) e humanos (vigilância, protocolos).",
+        "Sistemas híbridos que integram segurança física e lógica também são comuns.",
+        "A escolha depende do perfil de risco da organização e da análise de ameaças."
+      ]
+    },
+    "o que faz um analista de segurança corporativa": {
+      "variacoes": [
+        "Quais são as funções de um analista de segurança corporativa?",
+        "O que exatamente faz um analista de segurança?",
+        "Como atua um analista em segurança corporativa?",
+        "O que faz um anelista de seguransa?",
+        "Quais as função do analista de segurançia?",
+        "Como atua um analixta de segurança?"
+      ],
+      "respostas": [
+        "Esse profissional analisa riscos, elabora planos de segurança e implementa protocolos para proteger ativos empresariais.",
+        "Também realiza auditorias, investigações internas e monitora conformidade com políticas de segurança.",
+        "É uma peça-chave na prevenção de perdas e proteção de dados corporativos."
+      ]
+    },
+    "qual a diferença entre security e safety": {
+      "variacoes": [
+        "Qual é a diferença entre safety e security?",
+        "Pode explicar a diferença entre security e safety?",
+        "O que distingue segurança (security) de segurança (safety)?",
+        "Qual a diferensa entre safty e securite?",
+        "Qual a diferença entre sefty e securyti?",
+        "Me explica difereça entre secury e sefty?"
+      ],
+      "respostas": [
+        "Security está relacionada à proteção contra ameaças intencionais (roubo, invasão). Safety trata de proteção contra acidentes e falhas não intencionais.",
+        "Security foca em crimes e ataques. Safety foca na integridade física e prevenção de acidentes.",
+        "Ambas são complementares para uma gestão completa de riscos em ambientes corporativos."
+      ]
+    },
+    "como funciona o sistema de segurança": {
+      "variacoes": [
+        "Como opera um sistema de segurança empresarial?",
+        "Como é o funcionamento de um sistema de segurança?",
+        "Pode me explicar como age um sistema de proteção?",
+        "Como funcina o sitema de seguransa?",
+        "Como e o funciomento do sistema de segurançia?",
+        "Como opera o sstema de seguransa?"
+      ],
+      "respostas": [
+        "O sistema de segurança opera por meio de sensores, câmeras, controle de acesso e softwares de monitoramento.",
+        "Ele detecta anomalias, gera alertas e pode acionar equipes humanas ou bloqueios automatizados.",
+        "Também envolve rotinas de checagem, manutenção e resposta a incidentes."
+      ]
+    },
+    "como deve ser o sistema de segurança": {
+      "variacoes": [
+        "Quais características um bom sistema de segurança deve ter?",
+        "Como um sistema de segurança deve ser estruturado?",
+        "O que um sistema de segurança precisa ter?",
+        "Como deve se o sistema de seguransa?",
+        "Que um sitema de segurança presisa tê?",
+        "Como deve ser estruturado o sstema de segurançia?"
+      ],
+      "respostas": [
+        "Deve ser proativo, integrado, escalável e baseado em análise de riscos específicos.",
+        "Também precisa ser auditável, com protocolos documentados e tecnologias compatíveis.",
+        "A atualização constante é essencial para lidar com novas ameaças."
+      ]
+    },
+    "o que é uma política de segurança corporativa": {
+      "variacoes": [
+        "Qual a função de uma política de segurança?",
+        "O que define uma política de segurança em empresas?",
+        "Como funciona uma política de segurança organizacional?",
+        "O que e uma politia de seguransa corporativa?",
+        "Como é uma poliça de seguranca?",
+        "Qual é o papel de um politca de segurançia corporativa?"
+      ],
+      "respostas": [
+        "É um conjunto de diretrizes que estabelece regras, condutas e práticas para manter a segurança na empresa.",
+        "Serve como base para ações preventivas e corretivas em segurança física, digital e institucional.",
+        "Toda política deve estar alinhada à cultura organizacional e à legislação vigente."
+      ]
+    },
+    "qual a importância do sistema de segurança": {
+      "variacoes": [
+        "Por que o sistema de segurança é importante?",
+        "Qual a relevância de ter um sistema de segurança?",
+        "Por que implantar um sistema de segurança na empresa?",
+        "Qual a importançia do sistema de seguransa?",
+        "Porque o sitema de seguranca e importamte?",
+        "Qual a inportancia de um sistema de segurançia?"
+      ],
+      "respostas": [
+        "É essencial para proteger ativos, dados, pessoas e reputação empresarial.",
+        "Ajuda a prevenir perdas, garantir conformidade e reduzir riscos.",
+        "Também contribui para a continuidade dos negócios e o ambiente seguro."
+      ]
+    },
+    "o que é sistema de segurança do trabalho": {
+      "variacoes": [
+        "O que envolve um sistema de segurança do trabalho?",
+        "Como funciona a segurança do trabalho?",
+        "Quais práticas fazem parte da segurança do trabalho?",
+        "O que e sisteme de seguransa do trbalho?",
+        "Como funçiona a seguranca do trbalho?",
+        "Quais as pratica de segurançia no trabalho?"
+      ],
+      "respostas": [
+        "É um conjunto de normas, equipamentos e ações para proteger o trabalhador de riscos ocupacionais.",
+        "Inclui EPIs, treinamentos, sinalização e medidas de prevenção a acidentes.",
+        "Visa preservar a integridade física e saúde mental dos colaboradores."
+      ]
+    },
+    "o que temos no sistema de gestão de segurança": {
+      "variacoes": [
+        "Quais são os elementos da gestão de segurança?",
+        "O que compõe um sistema de gestão de segurança?",
+        "O que está presente na gestão de segurança?",
+        "O que temos no sisteme de gestaum de segurançia?",
+        "Quais sao os elemento da gestao de seguransa?",
+        "O que contem a gestam de seguransa?"
+      ],
+      "respostas": [
+        "Inclui políticas, objetivos, auditorias, controle de acesso, cultura de segurança e melhoria contínua.",
+        "Um bom sistema de gestão é baseado na norma ISO 45001 ou similares.",
+        "Também envolve a capacitação de colaboradores e monitoramento de indicadores de desempenho."
+      ]
+    },
+    "o que faz a empresa security": {
+      "variacoes": [
+        "Qual o trabalho da empresa Security?",
+        "O que oferece a empresa Security?",
+        "Como atua a empresa Security?",
+        "O que faz a empressa securit?",
+        "Qual o serviço da empersa securyti?",
+        "O que oferece a compania segurity?"
+      ],
+      "respostas": [
+        "A empresa Security presta serviços especializados em segurança privada, patrimonial e monitoramento.",
+        "Atua com soluções personalizadas de proteção, vigilância e escolta.",
+        "Também pode oferecer consultoria e gestão de riscos corporativos."
+      ]
+    }
+  },
+
+  "farewell": {
+    "tchau": "Até logo! 👋 Foi um prazer ajudar.",
+    "obrigado": "De nada! 😊 Sempre que precisar, estarei aqui.",
+    "valeu": "Valeu! 👍 Volte sempre que precisar."
+  },
+
+  "limitReached": "🚫 A versão gratuita chegou ao limite de 15 mensagens nesta sessão. Em breve, Braddock IA trará novos recursos e planos premium.",
+
+  "default": "O modelo Bradock IA de consulta grátiz pode te ajudar com **serviços, valores, suporte ou compliance**. Quer que eu apresente essas opções para você?"
+}

@@ -1,0 +1,3 @@
+.home-page {
+  scroll-behavior: auto; /* Garante que não haja animação suave indesejada */
+}

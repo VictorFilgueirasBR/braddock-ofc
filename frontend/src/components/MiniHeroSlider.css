@@ -1,0 +1,228 @@
+.mini-hero-slider {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* metade do HeroSlider */
+  overflow: hidden;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .mini-hero-slider{
+    height: 40vh;
+  }
+}
+
+/* Overlay superior com fade preto */
+.mini-hero-slider .top-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mini-hero-slider .slide-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 40px 30px;
+}
+
+@media (max-width: 480px) {
+  .mini-hero-slider .slide-background {
+    padding: 0 20px 25px;
+  }
+}
+
+.mini-hero-slider .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mini-hero-slider .slide-content {
+  position: relative;
+  max-width: 900px;
+  z-index: 2;
+  text-align: left;
+}
+
+@media (max-width: 480px) {
+  .mini-hero-slider .slide-content {
+    max-width: 400px;
+  }
+}
+
+
+
+
+
+.mini-hero-slider .slide-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.7rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 90%;
+}
+
+.mini-hero-slider .slide-title:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #600;
+  font-size: 1.75rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 90%;
+  transition: 0.8s;
+}
+
+@media (max-width: 480px) {
+  .mini-hero-slider .slide-title {
+    font-size: 1rem;
+  }
+
+  .mini-hero-slider .slide-title:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #600;
+  font-size: 1.05rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 90%;
+  transition: 0.8s;
+}
+}
+
+.mini-hero-slider .slide-description {
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #ddd;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+@media (max-width: 480px) {
+  .mini-hero-slider .slide-description {
+    font-size: 0.8rem;
+    max-width: 350px;
+    margin-bottom: 30px;
+  }
+}
+
+.mini-hero-slider .slide-divider {
+  width: 300px;
+  height: 2px;
+  background-color: #600;
+  margin: 6px 0 12px;
+  opacity: 0.7;
+  transition: width 0.6s ease, opacity 0.6s ease;
+}
+
+.mini-hero-slider .slide-divider.active {
+  width: 300px;
+  opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  .mini-hero-slider .slide-divider.active {
+    width: 250px;
+  }
+}
+
+.mini-hero-slider .plus-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #600;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.mini-hero-slider .read-more {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.mini-hero-slider .read-more:hover {
+  color: rgb(179, 0, 0);
+}
+
+.mini-hero-slider .slider-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.mini-hero-slider .slider-controls button {
+  background: transparent;
+  color: #600;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: background 0.3s ease;
+}
+
+.mini-hero-slider .slider-controls button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Paginação (bolinhas) */
+.mini-hero-slider .pagination {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.mini-hero-slider .pagination-dot {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.4;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mini-hero-slider .pagination-dot.active {
+  opacity: 1;
+  transform: scale(1.2);
+}
