@@ -255,7 +255,6 @@
   transition: transform 0.3s ease;
   
   /* NOVO: Altura fixa e layout flexível */
-  height: 14vh; 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -334,6 +333,9 @@
   }
   .chatbot-input-container {
     padding-top: 0.5rem;
+  }
+  .explore-card {
+    height: 14vh; 
   }
 }
 
