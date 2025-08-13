@@ -1,0 +1,6 @@
+# Netlify Configuration File
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://184.72.200.29:5000/:splat"
+  status = 200
