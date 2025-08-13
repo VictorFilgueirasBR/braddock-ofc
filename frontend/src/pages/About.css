@@ -345,4 +345,7 @@
   .about-text.fade-section.visible {
     padding: 1.5rem 1.2rem ;
   }
+  .about-extra.fade-section.visible {
+    padding: 1.5rem 1.2rem ;
+  }
 }
