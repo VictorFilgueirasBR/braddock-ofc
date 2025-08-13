@@ -74,7 +74,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -87,7 +87,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #600;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -117,7 +117,7 @@
 
 .mini-hero-slider .slide-description {
   font-family: Arial, sans-serif;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   font-weight: 300;
   color: #ddd;
   margin-bottom: 20px;

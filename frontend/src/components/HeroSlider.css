@@ -111,7 +111,7 @@
 
 .slide-description {
   font-family: Arial, sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #ddd;
   margin-bottom: 25px;
   max-width: 600px;
@@ -148,7 +148,7 @@
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 0.8px;
   transition: color 0.3s ease;
 }
 

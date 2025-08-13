@@ -88,7 +88,7 @@ export default function ChatBot() {
     try {
           // A URL agora aponta para o proxy interno do Netlify
           const response = await axios.post(
-            "/api/chat",
+            "https://184.72.200.29:5000/api/chat",
             { question: message, sessionId }
           );
 
