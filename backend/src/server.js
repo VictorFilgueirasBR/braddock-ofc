@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const chatbotController = require("./chatbotController");
+const chatbotController = require("./controllers/chatbotController");
 
 
 dotenv.config();
