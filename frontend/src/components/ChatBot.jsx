@@ -1,103 +1,204 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import { v4 as uuidv4 } from "uuid";
-import "../styles/Chatbot.css";
+import { FaAsterisk, FaPaperPlane, FaUserShield, FaHandshake, FaMoneyBill, FaHeadset } from "react-icons/fa";
+import "./ChatBot.css";
 
-const ChatBot = () => {
-  const [messages, setMessages] = useState([
-    { sender: "bot", text: "Olá 👋 Sou seu assistente virtual. Como posso ajudar?" },
-  ]);
-  const [inputValue, setInputValue] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [sessionId, setSessionId] = useState(null);
+const predefinedQuestions = [
+  { icon: <FaUserShield color="#6c63ff" size={20} />, title: "Serviços", desc: "Consultoria estratégica em segurança e compliance.", text: "Quais serviços sua consultoria oferece?" },
+  { icon: <FaHandshake color="#ff9800" size={20} />, title: "Contratar", desc: "Processo rápido e personalizado para sua empresa.", text: "Como funciona o processo de contratação?" },
+  { icon: <FaMoneyBill color="#4caf50" size={20} />, title: "Valores", desc: "Planos acessíveis a partir de R$ 2.500.", text: "Qual é o valor médio da consultoria?" },
+  { icon: <FaHeadset color="#e91e63" size={20} />, title: "Suporte", desc: "Acompanhamento contínuo e suporte 24/7.", text: "Vocês oferecem suporte contínuo?" },
+];
 
-  useEffect(() => {
-    setSessionId(uuidv4());
-  }, []);
+export default function ChatBot() {
+  const [messages, setMessages] = useState([
+    { sender: "bot", text: "Olá 👋 Sou seu assistente virtual. Como posso ajudar?" },
+  ]);
+  const [loading, setLoading] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+  const [particles, setParticles] = useState([]);
+  const [visibleCards, setVisibleCards] = useState([]);
+  const [sessionId] = useState(() => Math.random().toString(36).substring(7));
+  const cardsRef = useRef([]);
+  const messagesEndRef = useRef(null);
+  const messagesContainerRef = useRef(null);
+  const userScrolled = useRef(false);
 
-  const sendMessage = async (message) => {
-    if (!message.trim()) return;
+  useEffect(() => {
+    const generatedParticles = Array.from({ length: 50 }).map(() => ({
+      id: Math.random(),
+      size: Math.random() * 4 + 1,
+      top: Math.random() * 100,
+      left: Math.random() * 100,
+      duration: Math.random() * 20 + 10,
+    }));
+    setParticles(generatedParticles);
+  }, []);
 
-    setMessages((prev) => [...prev, { sender: "user", text: message }]);
-    setLoading(true);
-    setInputValue("");
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = Number(entry.target.dataset.index);
+            setVisibleCards((prev) => [...prev, index]);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
 
-    try {
-      // Correção: Usando a URL fixa do backend para evitar o erro de localhost
-      const response = await axios.post(
-        "http://184.72.200.29:5000/api/chat", // URL corrigida
-        { question: message, sessionId }
-      );
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
 
-      setTimeout(() => {
-        setMessages((prev) => [
-          ...prev,
-          { sender: "bot", text: response.data.answer },
-          ...(response.data.showCTAButton
-            ? [{
-                sender: "bot",
-                isButton: true,
-                text: "WhatsApp",
-                link: "https://wa.me/5521965486862"
-              }]
-            : [])
-        ]);
-        setLoading(false);
-      }, 2000);
-    } catch (error) {
-      console.error("Erro na comunicação com a API:", error);
-      setTimeout(() => {
-        setMessages((prev) => [
-          ...prev,
-          { sender: "bot", text: "Desculpe, ocorreu um erro. Tente novamente." },
-        ]);
-        setLoading(false);
-      }, 2000);
-    }
-  };
+    return () => observer.disconnect();
+  }, []);
 
-  const handleSend = () => {
-    sendMessage(inputValue);
-  };
+  useEffect(() => {
+    const container = messagesContainerRef.current;
+    const handleScroll = () => {
+      if (!container) return;
+      const nearBottom =
+        container.scrollHeight - container.scrollTop <= container.clientHeight + 50;
+      userScrolled.current = !nearBottom;
+    };
+    container?.addEventListener("scroll", handleScroll);
+    return () => container?.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      handleSend();
-    }
-  };
+  useEffect(() => {
+    if (!userScrolled.current && messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "nearest",
+      });
+    }
+  }, [messages, loading]);
 
-  return (
-    <div className="chatbot-container">
-      <div className="messages-list">
-        {messages.map((msg, index) => (
-          <div key={index} className={`message ${msg.sender}`}>
-            {msg.isButton ? (
-              <a href={msg.link} target="_blank" rel="noopener noreferrer" className="cta-button">
-                {msg.text}
-              </a>
-            ) : (
-              <p>{msg.text}</p>
-            )}
-          </div>
-        ))}
-        {loading && <div className="message bot loading-dots"><div></div><div></div><div></div></div>}
-      </div>
-      <div className="input-area">
-        <input
-          type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          onKeyDown={handleKeyDown}
-          placeholder="Converse com Braddock IA..."
-        />
-        <button onClick={handleSend} disabled={loading}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-  );
-};
+  const sendMessage = async (message) => {
+    if (!message.trim()) return;
 
-export default ChatBot;
+    setMessages((prev) => [...prev, { sender: "user", text: message }]);
+    setLoading(true);
+    setInputValue("");
+
+    try {
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/api/chat`,
+        { question: message, sessionId }
+      );
+
+      setTimeout(() => {
+        setMessages((prev) => [
+          ...prev,
+          { sender: "bot", text: response.data.answer },
+          ...(response.data.showCTAButton
+            ? [{
+                sender: "bot",
+                isButton: true,
+                text: "WhatsApp",
+                link: "https://wa.me/5521965486862"
+              }]
+            : [])
+        ]);
+        setLoading(false);
+      }, 2000);
+    } catch (error) {
+      setTimeout(() => {
+        setMessages((prev) => [
+          ...prev,
+          { sender: "bot", text: "Desculpe, ocorreu um erro. Tente novamente." },
+        ]);
+        setLoading(false);
+      }, 2000);
+    }
+  };
+
+  return (
+    <div className="chatbot-page">
+      {particles.map((p) => (
+        <div
+          key={p.id}
+          className="dust-particle"
+          style={{
+            width: p.size,
+            height: p.size,
+            top: `${p.top}%`,
+            left: `${p.left}%`,
+            animationDuration: `${p.duration}s`,
+          }}
+        />
+      ))}
+
+      <header className="chatbot-header">
+        <div className="avatar">
+          <FaAsterisk size={28} />
+        </div>
+        <h1>Assistente Virtual</h1>
+      </header>
+
+      <div className="chatbot-main">
+        <div className="chatbot-left">
+          <div className="chatbot-messages" ref={messagesContainerRef}>
+            {messages.map((msg, index) =>
+              msg.isButton ? (
+                <button
+                  key={index}
+                  className="whatsapp-btn"
+                  onClick={() => window.open(msg.link, "_blank")}
+                >
+                  {msg.text}
+                </button>
+              ) : (
+                <div
+                  key={index}
+                  className={`message ${msg.sender}`}
+                  {...(msg.sender === "bot"
+                    ? { dangerouslySetInnerHTML: { __html: msg.text } }
+                    : { children: msg.text })}
+                />
+              )
+            )}
+            {loading && <div className="typing">Digitando...</div>}
+            <div ref={messagesEndRef} />
+          </div>
+
+          <div className="chatbot-input-container">
+            <input
+              type="text"
+              placeholder="Conerse com Bradock IA..."
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && sendMessage(inputValue)}
+            />
+            <button className="send-btn" onClick={() => sendMessage(inputValue)}>
+              <FaPaperPlane />
+            </button>
+          </div>
+        </div>
+
+        <div className="chatbot-right">
+          {predefinedQuestions.map((q, index) => (
+            <div
+              key={index}
+              data-index={index}
+              ref={(el) => (cardsRef.current[index] = el)}
+              className={`explore-card ${visibleCards.includes(index) ? "visible" : ""}`}
+              onAnimationEnd={(e) => e.currentTarget.classList.add("animated")}
+              onClick={() => sendMessage(q.text)}
+            >
+              <div className="icon">{q.icon}</div>
+              <div className="text">
+                <span className="title">{q.title}</span>
+                <span className="desc">{q.desc}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
