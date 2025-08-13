@@ -86,10 +86,11 @@ export default function ChatBot() {
     setInputValue("");
 
     try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/chat`,
-        { question: message, sessionId }
-      );
+          // A URL agora aponta para o proxy interno do Netlify
+          const response = await axios.post(
+            "/api/chat",
+            { question: message, sessionId }
+          );
 
       setTimeout(() => {
         setMessages((prev) => [
