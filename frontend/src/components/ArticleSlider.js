@@ -6,21 +6,21 @@ const slides = [
     title: "Inteligência Artificial na Cibersegurança",
     resumo:
       "A inteligência artificial (IA), especialmente a generativa (GenAI), está transformando tanto os atacantes quanto os defensores corporativos. Ela possibilita ataques automatizados e altamente personalizados...",
-    date: "31/07/2025 | 357/25",
+    date: "31/07/2025",
     link: "#artigo1",
   },
   {
     title: "Zero Trust, O Novo Paradigma Corporativo",
     resumo:
       "O modelo de Zero Trust — ou Nunca confie, sempre verifique — se consolidou em 2025 como padrão essencial para proteger organizações contra ameaças internas e externas...",
-    date: "25/07/2025 | 322/25",
+    date: "25/07/2025",
     link: "#artigo2",
   },
   {
     title: "Gestão Integrada de Riscos",
     resumo:
       "A segurança empresarial está cada vez mais alinhada à governança corporativa, conformidade regulatória e proteção de dados sensíveis, com foco estratégico para manter confiança e evitar penalidades...",
-    date: "20/07/2025 | 289/25",
+    date: "20/07/2025",
     link: "#artigo3",
   },
 ];
