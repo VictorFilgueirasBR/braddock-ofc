@@ -81,7 +81,7 @@ export default function Presentation() {
             <div className={`caption-bar ${animateMedia ? "fade-in" : ""}`}>
               <div className="quote">“</div>
               <div className="caption-text">
-                — Capacitação estratégica em segurança corporativa e empresarial.
+              Capacitação estratégica em segurança corporativa e empresarial.
               </div>
             </div>
           </div>

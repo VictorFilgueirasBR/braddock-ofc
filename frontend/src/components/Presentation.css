@@ -233,7 +233,7 @@
   .caption-bar {
     margin-top: -6px; /* puxa a caixa para se sobrepor levemente ao vídeo */
   margin-left: auto;
-  margin-right: -10px;
+  margin-right: -25px;
   background: linear-gradient(90deg, var(--accent), #3f0000);
   color: #fff;
   padding: 0.7rem 1rem;
