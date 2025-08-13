@@ -1,5 +1,0 @@
-# Regra para o roteamento do SPA
-    /* /index.html 200
-
-    # Regra para o proxy do chatbot
-    /api/* http://184.72.200.29:5000/:splat 200
