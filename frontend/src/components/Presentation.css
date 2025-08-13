@@ -142,8 +142,9 @@
 
 /* Caixa de legenda / quote abaixo do vídeo, alinhada à direita (como no mock) */
 .caption-bar{
-  margin-top: -44px; /* puxa a caixa para se sobrepor levemente ao vídeo */
+  margin-top: -14px; /* puxa a caixa para se sobrepor levemente ao vídeo */
   margin-left: auto;
+  margin-right: -10px;
   background: linear-gradient(90deg, var(--accent), #3f0000);
   color: #fff;
   padding: 1rem 1.25rem;
@@ -218,7 +219,7 @@
   .presentation-container{ margin-left: 0; }
   .presentation-card{ padding-bottom: 1.25rem; }
   .presentation-badge{ left: 14px; top: -16px; font-size: 0.82rem; }
-  .caption-bar{ max-width: 100%; margin-top: -0.85rem; margin-left: 0; border-radius: 8px; }
+  .caption-bar{ max-width: 70%; margin-top: -10px; margin-right: -10px; border-radius: 8px; }
   .media-wrap{ padding: 0 1rem; box-sizing: border-box; }
 }
 
