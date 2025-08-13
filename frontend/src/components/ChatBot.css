@@ -1,7 +1,8 @@
 /*
  * ChatBot.css
- * Otimizado para responsividade em dispositivos móveis,
- * com ajustes de layout e tamanhos de fonte em telas pequenas.
+ * Versão otimizada para responsividade em dispositivos móveis.
+ * Ajusta o layout dos cards para exibir em duas colunas em telas pequenas,
+ * mantendo a aparência original.
  */
 
 .chatbot-page {
@@ -131,7 +132,7 @@
   line-height: 1.4;
   position: relative;
   animation: fadeIn 0.4s ease;
-  text-align: left; /* 🔹 Ajuste: texto alinhado à esquerda */
+  text-align: left;
 }
 
 .message.bot {
@@ -217,7 +218,7 @@
   transform: scale(1.05);
 }
 
-/* ======== RIGHT COLUMN ======== */
+/* ======== RIGHT COLUMN (CARDS) ======== */
 .chatbot-right {
   flex: 0 0 35%;
   display: grid;
@@ -227,14 +228,14 @@
   perspective: 1000px;
 }
 
-/* 3D Lift animation */
+/* Animação de levantamento 3D */
 @keyframes cardLift3D {
   0% { opacity: 0; transform: rotateX(85deg) rotateZ(-8deg) scale(0.9) translateY(30px); }
   50% { opacity: 1; transform: rotateX(-12deg) rotateZ(3deg) scale(1.03) translateY(5px); }
   100% { opacity: 1; transform: rotateX(0deg) rotateZ(0deg) scale(1) translateY(0); }
 }
 
-/* Cards */
+/* Estilo dos cards */
 .explore-card {
   background: rgba(255, 255, 255, 0.024);
   backdrop-filter: blur(2px) saturate(200%);
@@ -315,7 +316,7 @@
 /* Smartphones horizontais e telas pequenas de tablet */
 @media (max-width: 600px) {
   .chatbot-right {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* MANTÉM DUAS COLUNAS */
     gap: 10px;
     padding: 0;
   }
@@ -334,17 +335,18 @@
 /* Smartphones verticais (450px e abaixo) */
 @media (max-width: 450px) {
   .chatbot-right {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; /* MANTÉM DUAS COLUNAS PARA ESSAS TELAS TAMBÉM */
     gap: 8px;
+    padding: 0;
   }
   .explore-card {
     padding: 10px;
   }
   .explore-card .title {
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* REDUÇÃO DA FONTE DO TÍTULO */
   }
   .explore-card .desc {
-    font-size: 0.7rem;
+    font-size: 0.65rem; /* REDUÇÃO DA FONTE DA DESCRIÇÃO */
   }
   .explore-card .icon {
     padding: 8px;
