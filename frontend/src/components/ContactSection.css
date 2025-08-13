@@ -28,7 +28,6 @@
 
 .icon {
   font-size: 1.8rem;
-  margin-bottom: 10px;
 }
 
 /* Responsividade */
@@ -38,6 +37,6 @@
   }
 
   .icon {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
