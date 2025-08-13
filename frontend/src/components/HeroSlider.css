@@ -100,7 +100,7 @@
 /* Smartphones (até 480px) */
 @media (max-width: 480px) {
   .slide-title {
-    font-size: 1.33rem;
+    font-size: 1rem;
     white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
     max-width: 90%;
   }
@@ -119,7 +119,7 @@
 
 @media (max-width: 580px) {
     .slide-description {
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #ddd;
         margin-bottom: 25px;
         max-width: 370px;
