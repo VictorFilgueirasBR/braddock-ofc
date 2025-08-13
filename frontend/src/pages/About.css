@@ -342,4 +342,7 @@
   .founder-wrapper { flex-direction: column; text-align: center; }
   .founder-text h2, 
   .founder-text p { text-align: center; }
+  .about-text .fade-section.visible {
+    padding: 1rem 0.75rem ;
+  }
 }
