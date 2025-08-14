@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./DynamicArticleSlider.css";
 
 const articles = [
@@ -29,13 +29,13 @@ Em um mundo onde a única constante é a mudança, ter um parceiro estratégico 
     image: "/images/capa-mini-dois.png",
     content: `O modelo de Zero Trust — ou "Nunca confie, sempre verifique" — se consolidou em 2025 como padrão essencial para proteger organizações contra ameaças internas e externas.
 
-    Os Princípios-chave: Autenticação contínua, privilégios mínimos, segmentação de rede e verificação escrupulosa de identidade e acesso.
+Os Princípios-chave: Autenticação contínua, privilégios mínimos, segmentação de rede e verificação escrupulosa de identidade e acesso.
 
-    Para a adoção: Trabalho remoto, ambientes multicloud e mobilidade corporativa aumentam a exposição, tornando infraestrutura Zero Trust imprescindível.
+Para a adoção: Trabalho remoto, ambientes multicloud e mobilidade corporativa aumentam a exposição, tornando infraestrutura Zero Trust imprescindível.
 
-    Implementação técnica: Uso de MFA, single sign‑on, microsegmentação, monitoramento contínuo, controle sobre IoT e endpoints com EDR/XDR.
+Implementação técnica: Uso de MFA, single sign-on, microsegmentação, monitoramento contínuo, controle sobre IoT e endpoints com EDR/XDR.
 
-    Benefícios estratégicos: Maior resiliência, mitigação de ameaças internas, alinhamento com conformidade (LGPD, GDPR), adaptabilidade a mudanças de TI e negócios.`
+Benefícios estratégicos: Maior resiliência, mitigação de ameaças internas, alinhamento com conformidade (LGPD, GDPR), adaptabilidade a mudanças de TI e negócios.`
   },
   {
     id: "autoprotecao-empresarial",
@@ -63,16 +63,16 @@ Em suma, a inteligência é o alicerce sobre o qual a segurança é construída.
     image: "/images/capa-compliance.png",
     content: `Em um cenário corporativo cada vez mais complexo, o Compliance não é apenas uma formalidade, mas um escudo essencial para a saúde e a sustentabilidade de qualquer organização. Sua importância é ressaltada de forma ainda mais crítica na condução de Investigações Corporativas.
 
-    O Compliance atua como um sistema preventivo, estabelecendo diretrizes claras e promovendo uma cultura de ética e integridade. Quando bem implementado, ele cria um ambiente onde as regras são claras e as expectativas de conduta, transparentes.
+O Compliance atua como um sistema preventivo, estabelecendo diretrizes claras e promovendo uma cultura de ética e integridade. Quando bem implementado, ele cria um ambiente onde as regras são claras e as expectativas de conduta, transparentes.
 
-    No entanto, mesmo com as melhores práticas preventivas, incidentes podem ocorrer. É aí que as Investigações Corporativas entram em cena, atuando como um mecanismo crucial para:
+No entanto, mesmo com as melhores práticas preventivas, incidentes podem ocorrer. É aí que as Investigações Corporativas entram em cena, atuando como um mecanismo crucial para:
 
-     Mitigar Riscos: Ao investigar fraudes, assédios, mau comportamento ou quaisquer outras irregularidades, a empresa identifica as causas e os responsáveis, evitando que pequenos problemas se transformem em grandes crises.
-     Proteger a Reputação: Uma resposta rápida e eficaz a incidentes demonstra compromisso com a ética e a responsabilidade, protegendo a imagem da empresa perante clientes, parceiros, investidores e o público em geral.
-     Garantir um Ambiente Seguro: Ações corretivas baseadas em investigações robustas eliminam fontes de risco e promovem um local de trabalho mais seguro e justo para todos os colaboradores.
-     Evitar Perdas Financeiras e Jurídicas: A detecção precoce de irregularidades pode prevenir perdas financeiras significativas e evitar sanções legais severas, multas e processos judiciais.
+ Mitigar Riscos: Ao investigar fraudes, assédios, mau comportamento ou quaisquer outras irregularidades, a empresa identifica as causas e os responsáveis, evitando que pequenos problemas se transformem em grandes crises.
+ Proteger a Reputação: Uma resposta rápida e eficaz a incidentes demonstra compromisso com a ética e a responsabilidade, protegendo a imagem da empresa perante clientes, parceiros, investidores e o público em geral.
+ Garantir um Ambiente Seguro: Ações corretivas baseadas em investigações robustas eliminam fontes de risco e promovem um local de trabalho mais seguro e justo para todos os colaboradores.
+ Evitar Perdas Financeiras e Jurídicas: A detecção precoce de irregularidades pode prevenir perdas financeiras significativas e evitar sanções legais severas, multas e processos judiciais.
 
-    Em suma, a sinergia entre o Compliance e as Investigações Corporativas é fundamental para construir um ambiente de negócios mais seguro, transparente e resiliente, onde os riscos são minimizados e a integridade é sempre a prioridade.`
+Em suma, a sinergia entre o Compliance e as Investigações Corporativas é fundamental para construir um ambiente de negócios mais seguro, transparente e resiliente, onde os riscos são minimizados e a integridade é sempre a prioridade.`
   },
   {
     id: "seguranca-corporativa",
@@ -82,9 +82,9 @@ Em suma, a inteligência é o alicerce sobre o qual a segurança é construída.
     image: "/images/capa-um.png",
     content: `No dinâmico e competitivo cenário atual, a segurança corporativa transcendeu a ideia de um simples custo operacional para se tornar um pilar estratégico indispensável. Não se trata apenas de proteger o patrimônio físico, mas de salvaguardar informações cruciais, a reputação da marca, a continuidade dos negócios e, acima de tudo, a integridade de seus colaboradores. A ausência de um sistema de segurança robusto pode expor a empresa a riscos cibernéticos, fraudes, espionagem industrial, perdas financeiras e até mesmo danos irreversíveis à sua imagem no mercado. Investir em segurança é, portanto, investir na sustentabilidade e no crescimento de qualquer organização.
 
-    A Bradock Intelligence Academy (BIA) oferece soluções inteligentes em consultoria e capacitação. Com expertise aprofundada, a BIA está preparada para analisar as vulnerabilidades da sua empresa, desenvolver estratégias personalizadas e treinar suas equipes, garantindo entregáveis eficientes que otimizam integralmente seus sistemas de segurança. 
+A Bradock Intelligence Academy (BIA) oferece soluções inteligentes em consultoria e capacitação. Com expertise aprofundada, a BIA está preparada para analisar as vulnerabilidades da sua empresa, desenvolver estratégias personalizadas e treinar suas equipes, garantindo entregáveis eficientes que otimizam integralmente seus sistemas de segurança. 
 
-    Deixe a Bradock Intelligence Academy fortalecer a blindagem da sua corporação, permitindo que você foque no que realmente importa: O sucesso do seu negócio.`
+Deixe a Bradock Intelligence Academy fortalecer a blindagem da sua corporação, permitindo que você foque no que realmente importa: O sucesso do seu negócio.`
   },
   {
     id: "protecao-empresarial",
@@ -94,11 +94,11 @@ Em suma, a inteligência é o alicerce sobre o qual a segurança é construída.
     image: "/images/capa-dois.png",
     content: `No cenário atual, a segurança corporativa é muito mais que um gasto, é um pilar estratégico essencial. Não estamos falando só de proteger bens físicos, mas de resguardar informações cruciais, a reputação da sua marca, a continuidade dos negócios e, acima de tudo, a integridade dos seus colaboradores. 
 
-    Sem um sistema de segurança robusto, sua empresa fica vulnerável a ataques cibernéticos, fraudes, espionagem industrial e perdas financeiras que podem causar danos irreversíveis à sua imagem. Ou seja, investir em segurança é investir diretamente na sustentabilidade e no crescimento do seu negócio.
+Sem um sistema de segurança robusto, sua empresa fica vulnerável a ataques cibernéticos, fraudes, espionagem industrial e perdas financeiras que podem causar danos irreversíveis à sua imagem. Ou seja, investir em segurança é investir diretamente na sustentabilidade e no crescimento do seu negócio.
 
-    Pensando nessa necessidade vital, a Bradock Intelligence Academy oferece soluções inteligentes em consultoria e capacitação. Com nossa expertise aprofundada, vamos analisar as vulnerabilidades da sua empresa, criar estratégias personalizadas e treinar suas equipes. Nosso objetivo é entregar resultados eficientes que otimizam integralmente seus sistemas de segurança. 
+Pensando nessa necessidade vital, a Bradock Intelligence Academy oferece soluções inteligentes em consultoria e capacitação. Com nossa expertise aprofundada, vamos analisar as vulnerabilidades da sua empresa, criar estratégias personalizadas e treinar suas equipes. Nosso objetivo é entregar resultados eficientes que otimizam integralmente seus sistemas de segurança. 
 
-    Deixe a Bradock Intelligence Academy fortalecer a blindagem da sua corporação, assim você pode focar no que realmente importa: O sucesso do seu negócio.`
+Deixe a Bradock Intelligence Academy fortalecer a blindagem da sua corporação, assim você pode focar no que realmente importa: O sucesso do seu negócio.`
   },
   {
     id: "capacitacao-treinamentos",
@@ -116,11 +116,18 @@ Essa combinação única de qualificações capacita o fundador e o time da Brad
 
 export default function DynamicArticleSlider() {
   const { id } = useParams();
-  const [currentIndex] = useState(
+  const [currentIndex, setCurrentIndex] = useState(
     articles.findIndex((article) => article.id === id) !== -1
       ? articles.findIndex((article) => article.id === id)
       : 0
   );
+
+  // Sempre que o id mudar, atualiza índice e rola para o topo
+  useEffect(() => {
+    const index = articles.findIndex((article) => article.id === id);
+    setCurrentIndex(index !== -1 ? index : 0);
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [id]);
 
   const { title, resumo, date, image, content } = articles[currentIndex];
 
