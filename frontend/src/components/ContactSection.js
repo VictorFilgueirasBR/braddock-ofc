@@ -9,7 +9,7 @@ export default function ContactSection() {
         <a href="https://wa.me/5521965486862" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp className="icon" />
         </a>
-        <a href="https://instagram.com/seu_instagram" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/bradockintelligence.academy/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="icon" />
         </a>
         <a href="mailto:contato@bradockintelligence.com">

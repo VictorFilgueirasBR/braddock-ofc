@@ -6,13 +6,13 @@ import "./ChatBot.css";
 const predefinedQuestions = [
   { icon: <FaUserShield color="#6c63ff" size={20} />, title: "Serviços", desc: "Consultoria estratégica em segurança e compliance.", text: "Quais serviços sua consultoria oferece?" },
   { icon: <FaHandshake color="#ff9800" size={20} />, title: "Contratar", desc: "Processo rápido e personalizado para sua empresa.", text: "Como funciona o processo de contratação?" },
-  { icon: <FaMoneyBill color="#4caf50" size={20} />, title: "Valores", desc: "Planos acessíveis a partir de R$ 2.500.", text: "Qual é o valor médio da consultoria?" },
+  { icon: <FaMoneyBill color="#4caf50" size={20} />, title: "Valores", desc: "Planos acessíveis.", text: "Qual é o valor médio da consultoria?" },
   { icon: <FaHeadset color="#e91e63" size={20} />, title: "Suporte", desc: "Acompanhamento contínuo e suporte 24/7.", text: "Vocês oferecem suporte contínuo?" },
 ];
 
 export default function ChatBot() {
   const [messages, setMessages] = useState([
-    { sender: "bot", text: "Olá 👋 Sou seu assistente virtual. Como posso ajudar?" },
+    { sender: "bot", text: "Olá 👋 Sou a BIA sua assistente virtual. Como posso ajudar?" },
   ]);
   const [loading, setLoading] = useState(false);
   const [inputValue, setInputValue] = useState("");
@@ -170,7 +170,7 @@ export default function ChatBot() {
           <div className="chatbot-input-container">
             <input
               type="text"
-              placeholder="Conerse com Bradock IA..."
+              placeholder="Conerse com a BIA..."
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage(inputValue)}

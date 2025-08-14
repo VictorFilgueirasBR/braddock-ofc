@@ -62,10 +62,10 @@ export default function About() {
         <div className="container">
           <h2>Quem Somos</h2>
           <p>
-            A Bradock Intelligence Academy foi concebida a partir da visão e experiência de seu fundador, Adriano Filgueiras, Oficial Superior e veterano do Corpo de Fuzileiros Navais com 34 anos de serviço, que atuou como consultor e gestor de inteligência, riscos e segurança.
-            Com expertise comprovada, Adriano Filgueiras foi Agente de Segurança Pessoal no Gabinete de Segurança Institucional da Presidência da República, atuando em diversos países e em todos os estados do Brasil. Ele liderou a segurança em missões internacionais, como Chefe de Segurança da Força-Tarefa Marítima da ONU no Líbano em 2018 e Chefe do Destacamento de Segurança da Embaixada do Brasil no Haiti em 2023.
-            Sua formação robusta inclui pós-graduações em Inteligência e Gestão Estratégica, Docência de Segurança Pública e MBA em Governança, Risco e Compliance. Essa bagagem acadêmica e prática o posicionou para liderar projetos no setor público e privado.
-            A Bradock Intelligence Academy oferece soluções estratégicas e personalizadas para a proteção de executivos e seus negócios. Nossos serviços abrangem segurança pessoal, física e patrimonial, além de consultoria especializada e capacitação em Segurança, Inteligência e Compliance para o ambiente corporativo.
+            A Bradock Intelligence Academy foi concebida a partir da visão e experiência de seu fundador, Adriano Filgueiras, Oficial Superior Veterano do Corpo de Fuzileiros Navais com 34 anos de serviços, que atuou como consultor e gestor de inteligência, riscos e segurança.
+            Com expertise comprovada, Adriano Filgueiras foi Agente de Segurança Pessoal no Gabinete de Segurança Institucional da Presidência da República, atuando em diversos países e em todos os estados do Brasil. Ele liderou a segurança em missões internacionais, como Chefe de Segurança Pessoal do Comandante da Força-Tarefa Marítima da ONU no Líbano em 2018 e Chefe do Destacamento de Segurança da Embaixada do Brasil no Haiti em 2023.
+            Sua formação robusta inclui pós-graduações em Inteligência e Gestão Estratégica, Docência de Segurança Pública e MBA em Governança, Riscos e Compliance. Essa bagagem acadêmica e prática o posicionou para liderar projetos no setor público e privado.
+            A Bradock Intelligence Academy oferece consultoria e treinamento, fornecendo soluções estratégicas e personalizadas para a proteção de executivos e empresarial. Nossos serviços abrangem consultoria especializada e capacitação em Segurança, Inteligência e Compliance para o ambiente corporativo.
           </p>
         </div>
       </section>
@@ -89,11 +89,11 @@ export default function About() {
                     <h2>Adriano Filgueiras</h2>
                     <h4>Fundador & CEO</h4>
                     <p>
-                     Adriano Filgueiras, Oficial Superior e veterano do Corpo de Fuzileiros Navais com 34 anos de serviço. Ele possui vasta experiência em segurança pessoal, tendo atuado como Agente de Segurança Pessoal no Gabinete de Segurança Institucional da Presidência da República em diversos países e em todos os estados do Brasil.
+                     Adriano Filgueiras, Oficial Superior Veterano do Corpo de Fuzileiros Navais com 34 anos de serviços. Possuindo vasta experiência em segurança pessoal, tendo atuado como Agente de Segurança Pessoal no Gabinete de Segurança Institucional da Presidência da República em diversos países e em todos os estados do Brasil.
 
                     Em missões internacionais, ele foi Chefe de Segurança da Força-Tarefa Marítima da ONU no Líbano em 2018 e Chefe do Destacamento de Segurança da Embaixada do Brasil no Haiti em 2023. 
 
-                    Pós-graduado em Inteligência e Gestão Estratégica, Docência de Segurança Pública e MBA em Governança, Risco e Compliance. 
+                    Pós-graduado em Inteligência e Gestão Estratégica, Docência de Segurança Pública e MBA em Governança, Riscos e Compliance. 
                     </p>
                     <button className="founder-cta">Conheça a História</button>
                 </div>
